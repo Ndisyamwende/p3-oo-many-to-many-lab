@@ -22,7 +22,7 @@ def test_contract_init():
     assert contract.author == author
     assert contract.book == book
     assert contract.date == date
-    assert contract.royalties == royalties
+    assert contract.royalties() == royalties
 
 def test_contract_validates_author():
     """Test Contract class validates author of type Author"""
